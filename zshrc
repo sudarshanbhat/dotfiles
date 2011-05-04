@@ -13,9 +13,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="jtaby"
 
 # Customize to your needs...
-export PATH=/Users/majd/dotfiles/bin:$PATH
-export PATH=/Users/majd/work/tools:$PATH
-export PATH=/Users/majd/usr/bin:$PATH
+export PATH=/Users/sud/dotfiles/bin:$PATH
 
 # Make git use colors in its output
 git config --global color.diff auto
@@ -91,21 +89,20 @@ function j { local new_path="$(autojump $@)";if [ -n "$new_path" ]; then echo -e
 #------------------------------------------------------
 
 # SSH aliases
-alias vaio="ssh -p 2222 majd@taby.dnsalias.com"
 
 # GIT aliases
-alias gs="git status"
-#alias gd="git diff --color"
-alias gc="git commit -m"
-alias gp="git push"
-alias ga="git add"
-alias gf="git fetch"
-alias gb="gbranch"
+# alias gs="git status"
+# #alias gd="git diff --color"
+# alias gc="git commit -m"
+# alias gp="git push"
+# alias ga="git add"
+# alias gf="git fetch"
+# alias gb="gbranch"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gurl="git config --get remote.origin.url"
+# alias gurl="git config --get remote.origin.url"
 
-alias gclean="git clean -f"
-alias gmate="git diff | mate"
+# alias gclean="git clean -f"
+# alias gmate="git diff | mate"
 
 # SproutCore aliases
 alias ss="rm -rf tmp && ./bin/sc-server"
